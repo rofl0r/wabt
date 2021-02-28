@@ -33,7 +33,6 @@ jobs:
         mkdir -p /tmp/$PKGNAME
         mv * /tmp/$PKGNAME
         mv /tmp/$PKGNAME .
-        find -name .git -exec rm -rf {} \;
         TARBALL=$PKGNAME.tar.xz
         SHASUM=$PKGNAME.tar.xz.sha256
         tar cJf $TARBALL $PKGNAME
