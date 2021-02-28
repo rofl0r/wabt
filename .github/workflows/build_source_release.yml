@@ -54,7 +54,7 @@ jobs:
     - name: upload shasum
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.FOO_TOKEN }}
       with:
         upload_url: ${{ github.event.release.upload_url }}
         asset_path: ./${{ steps.archive.outputs.shasum }}
